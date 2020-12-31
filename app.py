@@ -21,7 +21,7 @@ tickers = options.split(" ")
 # Getting Data from Yahoo finance
 multpl_stocks = web.get_data_yahoo(tickers,
                                    start="2020-01-01",
-                                   end="2020-12-22")
+                                   end="2020-12-31")
 
 print(Fore.WHITE + Back.BLUE + Style.BRIGHT + "\n\n ---- STOCK DATA ---- \n")
 print(multpl_stocks)

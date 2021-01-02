@@ -110,3 +110,7 @@ The Images has been stored in the working directory.
 Have a nice day :)
 
 ```
+
+## Flow chart
+
+<img src="./static/FlowChart.png">

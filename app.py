@@ -51,15 +51,34 @@ fig.set_size_inches(8.5, 5.5)
 plt.savefig("monthlyReturns.png")
 plt.show()
 
-print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '\n\n ---- Mean ---- \n')
-print(multpl_stock_monthly_returns.mean())
-print(Fore.WHITE + Back.BLUE + Style.BRIGHT +
-      '\n\n ---- Standard Deviation ---- \n')
-print(multpl_stock_monthly_returns.std())
-print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '\n\n ---- Correlation ---- \n')
-print(multpl_stock_monthly_returns.corr())
-print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '\n\n ---- Covariance ---- \n')
-print(multpl_stock_monthly_returns.cov())
+mean_option = input(
+    "If you would like to print the mean of monthly stock returns if yes enter Y else press N \n :")
+standard_deviation_option = input(
+    "If you would like to print the standard deviation of monthly stock returns if yes enter Y else press N \n :")
+correlation_option = input(
+    "If you would like to print the correlation of monthly stock returns if yes enter Y else press N \n :")
+covariance_option = input(
+    "If you would like to print the covariance of monthly stock returns if yes enter Y else press N \n :")
+
+# Menu options for monthly stock returns
+
+if mean_option == "Y" or mean_option == "y":
+    print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '\n\n ---- Mean ---- \n')
+    print(multpl_stock_monthly_returns.mean())
+
+if standard_deviation_option == "Y" or standard_deviation_option == "y":
+    print(Fore.WHITE + Back.BLUE + Style.BRIGHT +
+          '\n\n ---- Standard Deviation ---- \n')
+    print(multpl_stock_monthly_returns.std())
+
+if correlation_option == "Y" or standard_deviation_option == "y":
+    print(Fore.WHITE + Back.BLUE + Style.BRIGHT +
+          '\n\n ---- Correlation ---- \n')
+    print(multpl_stock_monthly_returns.corr())
+
+if covariance_option == "Y" or covariance_option == "y":
+    print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '\n\n ---- Covariance ---- \n')
+    print(multpl_stock_monthly_returns.cov())
 
 print(" \nThe Images has been stored in the working directory.")
 print(Fore.WHITE + Back.BLUE + Style.BRIGHT + "\nHave a nice day :)")

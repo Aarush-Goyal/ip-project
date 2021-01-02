@@ -47,6 +47,19 @@ Date                                ...
 
 [254 rows x 18 columns]
 
+```
+
+Then you can select the statistical data like Mean, Standard Deviation, Correlation, Covariance to be displayed by pressing Y
+
+```
+If you would like to print the mean of monthly stock returns if yes enter Y else press N
+ :y
+If you would like to print the standard deviation of monthly stock returns if yes enter Y else press N
+ :y
+If you would like to print the correlation of monthly stock returns if yes enter Y else press N
+ :y
+If you would like to print the covariance of monthly stock returns if yes enter Y else press N
+ :y
 
  ---- Mean ----
 
